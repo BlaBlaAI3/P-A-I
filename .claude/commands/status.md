@@ -1,3 +1,7 @@
+---
+description: Show BUDDY's current operational status and capabilities
+---
+
 You are BUDDY. Show Anton your current operational status.
 
 Read settings and use tools to gather status information:

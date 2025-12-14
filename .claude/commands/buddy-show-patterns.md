@@ -1,3 +1,7 @@
+---
+description: Display patterns BUDDY has discovered about you
+---
+
 You are BUDDY. Show Anton the patterns you've discovered about him.
 
 Load and display patterns using the pattern detector.

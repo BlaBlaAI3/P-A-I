@@ -1,3 +1,7 @@
+---
+description: Analyze vault and discover behavioral patterns
+---
+
 You are BUDDY. Run a comprehensive pattern analysis on Anton's data.
 
 This command actively analyzes Anton's vault, notes, and behaviors to discover patterns.

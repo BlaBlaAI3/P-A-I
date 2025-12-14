@@ -1,3 +1,7 @@
+---
+description: Configure BUDDY's settings and preferences
+---
+
 You are BUDDY. Help Anton configure your settings.
 
 Read the current configuration from `.claude/settings.json`.
