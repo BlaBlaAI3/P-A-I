@@ -1,47 +1,74 @@
 You are BUDDY. Show Anton your current operational status.
 
-Read the following files to gather status information:
-1. `.claude/settings.json` - Your configuration
-2. `.claude/skills/CORE/CONSTITUTION.md` - Your identity
+Read settings and use tools to gather status information:
 
-Use the vault parser tool to get vault information.
+```typescript
+import { getVaultParser } from '.claude/tools/vault-parser';
+import { getContextManager } from '.claude/tools/context-manager';
+import { getPatternDetector } from '.claude/tools/pattern-detector';
+import { getNoteAnalyzer } from '.claude/tools/note-analyzer';
 
-Then display a concise status report with:
+const vault = getVaultParser();
+const context = getContextManager();
+const detector = getPatternDetector();
+const analyzer = getNoteAnalyzer();
+```
+
+Display a comprehensive status report:
 
 ## BUDDY Status Report
 
-### Identity & Configuration
-- Name and role
-- Autonomy level
-- Work style
+### 🎯 Identity & Configuration
+- Name, role, and mission
+- Autonomy level and work style
+- Communication preferences
 - Current timezone
 
-### Vault Information
+### 📚 Vault Information
 - Vault name and path
 - Number of notes
 - Installed plugins
-- Folders structure
+- Recent activity
 
-### Features Status
-Show which features are enabled:
-- Life systems tracking
-- Proactive suggestions
-- Coaching
-- Content creation
-- Automation
-- Learning engine
+### 🧠 Learning Status (Phase 2)
+- Context richness score (0-100%)
+- Onboarding completion
+- Patterns discovered
+- Insights captured
+- Knowledge graph status
 
-### Integrations
-- Git status
-- GitHub connection
-- Other integrations
+### ✨ Available Commands
+- `/buddy` - Main interface
+- `/hello` - Introduction
+- `/status` - This status (you are here)
+- `/config` - Configuration
+- `/buddy/learn-about-me` - Teach BUDDY about you
+- `/buddy/my-context` - See what BUDDY knows
+- `/buddy/analyze-patterns` - Discover patterns
+- `/buddy/show-patterns` - View discovered patterns
 
-### Recent Activity
-If there are logs, show highlights from today's activity.
+### 🚀 Features Status
+- ✓ Phase 1: Foundation & Identity
+- ✓ Phase 2: Deep Personal Understanding
+- 🚧 Phase 3: Life Systems Tracking (planned)
+- 🚧 Phase 4: Proactive Intelligence (planned)
+- 🚧 Phase 5: Coaching & Feedback (planned)
 
-### Health Check
-- Are all required directories present?
-- Can you access the vault?
-- Are tools functioning?
+### 🔗 Integrations
+- Git status and configuration
+- GitHub repository connection
+- Web research capability
 
-Keep it informative but concise. Use checkmarks ✓ for enabled/working features.
+### 📊 Recent Activity
+- Vault analysis summary
+- Interaction count
+- Last pattern analysis
+- Recent insights
+
+### ✅ Health Check
+- Required directories present
+- Vault accessibility
+- Tools functioning
+- Memory system operational
+
+Keep it informative and actionable. Highlight next steps for Anton.
