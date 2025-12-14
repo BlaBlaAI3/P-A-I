@@ -1,0 +1,113 @@
+# BUDDY Personal AI Infrastructure - Git Ignore
+
+# ================================
+# SENSITIVE DATA - NEVER COMMIT
+# ================================
+
+# Personal context and memory (contains your private data)
+.claude/memory/
+.claude/settings.json
+personal-context.json
+interaction-history.json
+patterns.json
+
+# API Keys and Environment Variables
+.env
+.env.local
+.env.production
+**/*.key
+**/*.pem
+credentials.json
+
+# Logs (may contain sensitive information)
+LOGS/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ================================
+# OBSIDIAN SPECIFIC
+# ================================
+
+# Workspace is user-specific, don't sync
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Cache and temporary files
+.obsidian/cache
+.obsidian/plugins/*/data.json
+.obsidian/plugins/*/cache.json
+.trash/
+
+# ================================
+# NODE / DEPENDENCIES
+# ================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# ================================
+# OS / EDITOR FILES
+# ================================
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# ================================
+# TEMPORARY / DEVELOPMENT
+# ================================
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Test outputs
+coverage/
+.nyc_output/
+
+# ================================
+# BUDDY SPECIFIC (OPTIONAL EXCLUDES)
+# ================================
+
+# Uncomment if you want to keep these private:
+# AUTOMATIONS/
+# VAULT_INTEGRATION/
+
+# Backup files
+*.backup
+*.bak
