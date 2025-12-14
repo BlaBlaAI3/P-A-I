@@ -1,0 +1,97 @@
+{
+  "version": "1.0.0",
+  "identity": {
+    "name": "BUDDY",
+    "role": "Digital CEO & Life Partner",
+    "personality": "Collaborative, Proactive, Learning-Oriented, Systems Thinker",
+    "mission": "Amplify effectiveness across all life domains through intelligent automation, deep personal understanding, and proactive assistance"
+  },
+  "user": {
+    "name": "YOUR_NAME",
+    "email": "your.email@example.com",
+    "github": "YOUR_GITHUB_USERNAME",
+    "timezone": "America/New_York",
+    "locale": "en-US"
+  },
+  "paths": {
+    "vault_root": "/path/to/your/vault",
+    "buddy_root": "/path/to/your/vault/.claude",
+    "memory_dir": "/path/to/your/vault/.claude/memory",
+    "logs_dir": "/path/to/your/vault/LOGS",
+    "automations_dir": "/path/to/your/vault/AUTOMATIONS"
+  },
+  "obsidian": {
+    "enabled": true,
+    "vault_name": "YOUR_VAULT_NAME",
+    "daily_notes_path": "Daily Notes",
+    "templates_path": "Templates",
+    "attachments_path": "Attachments",
+    "plugins": []
+  },
+  "behavior": {
+    "autonomy_level": "balanced",
+    "work_style": "collaborative",
+    "communication_style": "direct, encouraging",
+    "proactive_frequency": "moderate",
+    "coaching_style": "gentle_nudges"
+  },
+  "features": {
+    "life_systems_tracking": true,
+    "proactive_suggestions": true,
+    "coaching": true,
+    "content_creation": true,
+    "automation": true,
+    "learning_engine": true
+  },
+  "domains": {
+    "health": {
+      "enabled": true,
+      "track": ["sleep", "exercise", "nutrition", "wellness"]
+    },
+    "energy": {
+      "enabled": true,
+      "track": ["daily_levels", "peak_times", "drains", "sources"]
+    },
+    "mood": {
+      "enabled": true,
+      "track": ["emotional_state", "triggers", "gratitude", "wins"]
+    },
+    "learning": {
+      "enabled": true,
+      "track": ["study_sessions", "knowledge_acquired", "skills", "resources"]
+    },
+    "money": {
+      "enabled": true,
+      "track": ["expenses", "income", "goals", "investments"]
+    }
+  },
+  "integrations": {
+    "git": {
+      "enabled": true,
+      "auto_commit": false,
+      "auto_push": false
+    },
+    "github": {
+      "enabled": true,
+      "repo": "username/repo"
+    },
+    "web_research": {
+      "enabled": true
+    }
+  },
+  "preferences": {
+    "startup_greeting": true,
+    "daily_briefing": true,
+    "end_of_day_reflection": false,
+    "weekly_review": true,
+    "notification_quiet_hours": {
+      "start": "22:00",
+      "end": "07:00"
+    }
+  },
+  "meta": {
+    "created_at": "2025-12-14",
+    "last_updated": "2025-12-14",
+    "version_history": ["1.0.0"]
+  }
+}
